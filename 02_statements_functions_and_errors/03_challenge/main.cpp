@@ -9,7 +9,7 @@
 int power(int base, int exponent = 2);
 
 int main() {
-  std::cout << "power(3,4) = " << power(3,4) << std::endl;
+  std::cout << power(3,4) << std::endl;
 }
 
 int power(int base, int exponent) {
