@@ -8,7 +8,7 @@
 #include <vector>
 #include <string>
 
-int element_at(const std::vector<int>& vector, const int idx);
+int element_at(const std::vector<int>& vector, int idx);
 
 int main() {
     std::vector<int> numbers = {1, 3, 5, 7, 9};
@@ -46,10 +46,10 @@ int main() {
     return status;
 }
 
-int element_at(const std::vector<int>& vector, const int idx) {
+int element_at(const std::vector<int>& vector, int idx) {
     if ((idx >= vector.size())
      || (idx < 0)) {
         throw std::out_of_range("index:" + std::to_string(idx) + " is out of range.");
     }
-    return vector.at(idx);
+    return vector[idx];
 }

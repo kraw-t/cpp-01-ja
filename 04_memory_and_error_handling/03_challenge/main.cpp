@@ -29,8 +29,8 @@ std::vector<int> double_elements(const std::vector<int>& original_vector) {
     // vectorの各要素を2倍したvectorを返す
     std::vector<int> doubled_numbers;
     
-    for (int i = 0; i < original_vector.size(); i++) {
-        doubled_numbers.push_back(original_vector.at(i) * 2);
+    for (auto num : original_vector) {
+        doubled_numbers.push_back(num * 2);
     }
     return doubled_numbers;
 }
